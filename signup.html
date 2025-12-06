@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="form">
+      <div class="signup-form">
+        <div></div>
+        <h2>Get a full time or a part time job with us</h2>
+        <p>
+          Fill the form to register into our system and start searching applying
+          for jobs.
+        </p>
+        <div class="input-flex">
+        <form id="signup-form" autocomplete="on" novalidate>
+          <div class="input-flex">
+            <input
+              id="signup-email"
+              name="email"
+              type="email"
+              placeholder="Business email*"
+              autocomplete="email"
+              required
+            />
+            <div class="short-inputs">
+              <input
+                id="first-name"
+                name="firstName"
+                type="text"
+                placeholder="First name*"
+                required
+              />
+              <input
+                id="last-name"
+                name="lastName"
+                type="text"
+                placeholder="Last name*"
+                required
+              />
+              <input
+                id="company"
+                name="company"
+                type="text"
+                placeholder="Company*"
+              />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Phone"
+                autocomplete="tel"
+              />
+              <div class="password-wrapper">
+                <input
+                  id="signup-password"
+                  name="password"
+                  type="password"
+                  placeholder="Password*"
+                  required
+                  autocomplete="new-password"
+                />
+                <button
+                  type="button"
+                  class="toggle-password icon-btn"
+                  data-target="signup-password"
+                  aria-label="Show password"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <div class="password-wrapper">
+                <input
+                  id="confirm-password"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Confirm password*"
+                  required
+                  autocomplete="new-password"
+                />
+                <button
+                  type="button"
+                  class="toggle-password icon-btn"
+                  data-target="confirm-password"
+                  aria-label="Show password"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <input
+              id="industry"
+              name="industry"
+              type="text"
+              placeholder="Industry field"
+            />
+            <input
+              id="department"
+              name="department"
+              type="text"
+              placeholder="Department*"
+            />
+            <input
+              id="job-level"
+              name="jobLevel"
+              type="text"
+              placeholder="Job Level/role*"
+            />
+            <input
+              id="org-desc"
+              name="orgDesc"
+              type="text"
+              placeholder="What best describes your Organization? if you are a one*"
+            />
+            <input
+              id="country"
+              name="country"
+              type="text"
+              placeholder="Country*"
+            />
+            <input
+              id="projects"
+              name="projects"
+              type="text"
+              placeholder="Tell us about your projects."
+            />
+          </div>
+
+          <p id="error-msg" style="color: red; display: none"></p>
+
+          <button id="signup-btn" type="submit">Sign up</button>
+          <p>Already Have an Account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+      <div class="description">
+        <h3><i class="fa-solid fa-briefcase"></i>Job Portal</h3>
+        <p class="number1">The #1 platform to find jobs that suit your role</p>
+        <p>&#10004; Get connected to over 1 million employers</p>
+        <p>&#10004; Find a community of</p>
+        <p>
+          &#10004; Make use of our LLM to match you with jobs best fited for you
+        </p>
+        <p>&#10004; Find jobs fast and secured</p>
+        <p>&#10004; 24/7 accessable</p>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
